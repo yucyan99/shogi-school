@@ -1,0 +1,764 @@
+
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>オンライン将棋教室｜初心者から有段者まで個別指導【無料体験あり】</title>
+
+  <meta name="description" content="初心者から有段者まで対応するオンライン将棋教室。駒落ちによる指導対局を中心に、一人ひとりに合わせた個別レッスンを行います。無料体験受付中。">
+
+  <meta name="keywords" content="オンライン将棋教室,将棋教室,将棋レッスン,将棋個別指導,駒落ち,初心者,将棋">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="オンライン将棋教室">
+  <meta property="og:description" content="初心者から有段者まで対応。駒落ちを中心としたオンライン個別指導。">
+  <meta property="og:image" content="images/ogp.jpg">
+  <meta property="og:url" content="https://example.com/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header id="header">
+
+  <div class="container">
+
+    <a href="#" class="logo">
+      ゆうちゃんのオンライン将棋教室
+    </a>
+
+    <nav class="nav">
+
+      <ul>
+
+        <li><a href="#about">教室について</a></li>
+
+        <li><a href="#lesson">レッスン内容</a></li>
+
+        <li><a href="#price">料金</a></li>
+
+        <li><a href="#profile">講師紹介</a></li>
+
+        <li><a href="#faq">FAQ</a></li>
+
+        <li>
+          <a href="#contact" class="nav-btn">
+            無料体験
+          </a>
+        </li>
+
+      </ul>
+
+    </nav>
+
+    <button class="hamburger" id="hamburger">
+
+      <span></span>
+      <span></span>
+      <span></span>
+
+    </button>
+
+  </div>
+
+</header>
+
+<section class="hero">
+
+  <div class="hero-overlay"></div>
+
+  <div class="container hero-inner">
+
+    <div class="hero-text">
+
+      <p class="hero-sub">
+        初心者から有段者まで対応
+      </p>
+
+      <h1>
+
+        一手ずつ、<br>
+        あなたの将棋を<br>
+        強くする。
+
+      </h1>
+
+      <p class="hero-description">
+
+        駒落ちによる指導対局を中心に、
+        一人ひとりの棋力や目標に合わせた
+        オンライン個別指導を行っています。
+
+      </p>
+
+      <div class="hero-buttons">
+
+        <a href="#contact" class="btn-primary">
+          無料体験レッスンはこちら
+        </a>
+
+        <a href="#lesson" class="btn-secondary">
+          レッスンを見る
+        </a>
+
+      </div>
+
+      <ul class="hero-points">
+
+        <li>✔ 完全オンライン対応</li>
+
+        <li>✔ 初心者歓迎</li>
+
+        <li>✔ 駒落ち指導で着実に上達</li>
+
+      </ul>
+
+    </div>
+
+    <div class="hero-card">
+
+      <div class="card">
+
+        <span class="card-title">
+          無料体験受付中
+        </span>
+
+        <h2>60分体験レッスン</h2>
+
+        <p>
+
+          教室の雰囲気や指導方法を
+          実際に体験できます。
+
+        </p>
+
+        <a href="#contact" class="card-button">
+
+          今すぐ申し込む
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="recommend" id="about">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <span>FOR YOU</span>
+
+      <h2>こんな方におすすめ</h2>
+
+    </div>
+
+    <div class="recommend-grid">
+
+      <div class="recommend-card">
+
+        <div class="icon">♙</div>
+
+        <h3>将棋を始めたい</h3>
+
+        <p>
+          駒の動かし方から丁寧にサポートします。
+        </p>
+
+      </div>
+
+      <div class="recommend-card">
+
+        <div class="icon">♖</div>
+
+        <h3>級位者を卒業したい</h3>
+
+        <p>
+          一人ひとりに合わせた駒落ち指導で
+          着実に実力を伸ばします。
+        </p>
+
+      </div>
+
+      <div class="recommend-card">
+
+        <div class="icon">♔</div>
+
+        <h3>有段者を目指したい</h3>
+
+        <p>
+          苦手分野を分析し、
+          上達への最短ルートをご提案します。
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="lesson" id="lesson">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <span>LESSON</span>
+
+      <h2>レッスン内容</h2>
+
+      <p>
+        基本は駒落ちによる指導対局です。対局後は感想戦で考え方や改善点を丁寧に解説します。
+      </p>
+
+    </div>
+
+    <div class="lesson-grid">
+
+      <article class="lesson-card">
+
+        <div class="lesson-icon">♟</div>
+
+        <h3>駒落ち指導対局</h3>
+
+        <p>
+          棋力に応じた駒落ちで対局を行います。
+          無理なく実戦経験を積めるため、
+          初心者から有段者まで効率よく力を伸ばせます。
+        </p>
+
+      </article>
+
+      <article class="lesson-card">
+
+        <div class="lesson-icon">📝</div>
+
+        <h3>感想戦</h3>
+
+        <p>
+          対局後に局面を振り返り、
+          良かった点・改善点・次に意識するポイントを
+          わかりやすく解説します。
+        </p>
+
+      </article>
+
+      <article class="lesson-card">
+
+        <div class="lesson-icon">📚</div>
+
+        <h3>希望者向けサポート</h3>
+
+        <p>
+          棋譜添削や勉強方法の相談にも対応しています。
+          今後の学習計画についても一緒に考えます。
+        </p>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="features">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <span>FEATURE</span>
+
+      <h2>選ばれる理由</h2>
+
+    </div>
+
+    <div class="feature-grid">
+
+      <div class="feature-item">
+
+        <span class="feature-number">01</span>
+
+        <h3>完全個別指導</h3>
+
+        <p>
+          一人ひとりの目標や棋力に合わせたレッスンなので、
+          自分のペースで学べます。
+        </p>
+
+      </div>
+
+      <div class="feature-item">
+
+        <span class="feature-number">02</span>
+
+        <h3>駒落ち中心の指導</h3>
+
+        <p>
+          実戦を通して考える力を育てます。
+          勝敗だけではなく内容を重視したレッスンです。
+        </p>
+
+      </div>
+
+      <div class="feature-item">
+
+        <span class="feature-number">03</span>
+
+        <h3>全国どこからでも受講可能</h3>
+
+        <p>
+          インターネット環境があれば、
+          ご自宅から気軽に受講できます。
+        </p>
+
+      </div>
+
+      <div class="feature-item">
+
+        <span class="feature-number">04</span>
+
+        <h3>初心者も安心</h3>
+
+        <p>
+          将棋を始めたばかりの方でも、
+          わかりやすく丁寧にサポートします。
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="price" id="price">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <span>PRICE</span>
+
+      <h2>料金</h2>
+
+    </div>
+
+    <div class="price-table">
+
+      <div class="price-row">
+
+        <div class="plan">
+          無料体験レッスン
+        </div>
+
+        <div class="time">
+          60分
+        </div>
+
+        <div class="fee">
+          無料
+        </div>
+
+      </div>
+
+      <div class="price-row">
+
+        <div class="plan">
+          個別レッスン
+        </div>
+
+        <div class="time">
+          60分
+        </div>
+
+        <div class="fee">
+          3,000円
+        </div>
+
+      </div>
+
+      <div class="price-row">
+
+        <div class="plan">
+          月4回コース
+        </div>
+
+        <div class="time">
+          月4回
+        </div>
+
+        <div class="fee">
+          10,000円
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="profile" id="profile">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <span>PROFILE</span>
+
+      <h2>講師紹介</h2>
+
+    </div>
+
+    <div class="profile-wrapper">
+
+      <div class="profile-image">
+
+        <!-- ご自身の写真に差し替えてください -->
+        <img src="images/profile.jpg" alt="講師 ゆうちゃん">
+
+      </div>
+
+      <div class="profile-content">
+
+        <h3>ゆうちゃん</h3>
+
+        <p class="profile-copy">
+          将棋歴25年以上。全国大会での入賞経験を活かし、
+          「考える力」が身につくレッスンを大切にしています。
+        </p>
+
+        <div class="career">
+
+          <h4>主な実績</h4>
+
+          <ul>
+
+            <li>小学生将棋名人戦 ベスト4</li>
+
+            <li>中学生選抜将棋選手権 4位</li>
+
+            <li>全国高等学校将棋選手権大会 準優勝</li>
+
+            <li>大学王座戦（団体戦）優勝</li>
+
+            <li>将棋ウォーズ 六段</li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="flow">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <span>FLOW</span>
+
+      <h2>受講までの流れ</h2>
+
+    </div>
+
+    <div class="flow-list">
+
+      <div class="flow-item">
+
+        <div class="flow-number">1</div>
+
+        <div>
+
+          <h3>無料体験を申し込む</h3>
+
+          <p>
+            フォームからお気軽にお申し込みください。
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="flow-item">
+
+        <div class="flow-number">2</div>
+
+        <div>
+
+          <h3>日程調整</h3>
+
+          <p>
+            ご希望の日程を確認し、
+            レッスン日時を決定します。
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="flow-item">
+
+        <div class="flow-number">3</div>
+
+        <div>
+
+          <h3>無料体験レッスン</h3>
+
+          <p>
+            実際の指導を体験していただきます。
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="flow-item">
+
+        <div class="flow-number">4</div>
+
+        <div>
+
+          <h3>継続受講スタート</h3>
+
+          <p>
+            ご希望の方は継続レッスンへ進みます。
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="faq" id="faq">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <span>FAQ</span>
+
+      <h2>よくある質問</h2>
+
+    </div>
+
+    <div class="faq-list">
+
+      <details>
+
+        <summary>
+          初心者でも受講できますか？
+        </summary>
+
+        <p>
+          もちろんです。駒の動かし方から丁寧に指導しますので、
+          初めての方でも安心して受講できます。
+        </p>
+
+      </details>
+
+      <details>
+
+        <summary>
+          使用するソフトは何ですか？
+        </summary>
+
+        <p>
+          主に81Dojoなどを利用してレッスンを行います。
+        </p>
+
+      </details>
+
+      <details>
+
+        <summary>
+          子どもでも受講できますか？
+        </summary>
+
+        <p>
+          はい。小学生から大人まで幅広く対応しています。
+        </p>
+
+      </details>
+
+      <details>
+
+        <summary>
+          体験だけでも大丈夫ですか？
+        </summary>
+
+        <p>
+          問題ありません。無理な勧誘はいたしませんので、
+          お気軽にお申し込みください。
+        </p>
+
+      </details>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="contact" id="contact">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <span>CONTACT</span>
+
+      <h2>無料体験レッスン受付中</h2>
+
+      <p>
+        少しでも興味をお持ちいただけましたら、
+        まずは無料体験レッスンへお申し込みください。
+      </p>
+
+    </div>
+
+    <div class="contact-box">
+
+      <h3>お申し込み方法</h3>
+
+      <p>
+        下のボタンからGoogleフォームへ進み、
+        必要事項をご入力ください。
+      </p>
+
+      <!-- GoogleフォームURLに差し替えてください -->
+      <a
+        href="https://forms.gle/XXXXXXXXXXXX"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="contact-button"
+      >
+        無料体験を申し込む
+      </a>
+
+      <p class="contact-note">
+        通常2日以内にご返信いたします。
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="cta">
+
+  <div class="container">
+
+    <div class="cta-box">
+
+      <h2>
+        将棋をもっと楽しく、もっと強く。
+      </h2>
+
+      <p>
+        あなたの目標に合わせた個別指導で、
+        一歩ずつ着実な上達をサポートします。
+      </p>
+
+      <a
+        href="#contact"
+        class="btn-primary"
+      >
+        無料体験レッスンはこちら
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<footer>
+
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <div>
+
+        <h3>
+          ゆうちゃんのオンライン将棋教室
+        </h3>
+
+        <p>
+          初心者から有段者まで対応する
+          オンライン個別将棋教室です。
+        </p>
+
+      </div>
+
+      <div>
+
+        <h4>サイトメニュー</h4>
+
+        <ul>
+
+          <li><a href="#about">教室について</a></li>
+
+          <li><a href="#lesson">レッスン内容</a></li>
+
+          <li><a href="#price">料金</a></li>
+
+          <li><a href="#profile">講師紹介</a></li>
+
+          <li><a href="#faq">FAQ</a></li>
+
+          <li><a href="#contact">お問い合わせ</a></li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <p>
+        © 2026 ゆうちゃんのオンライン将棋教室 All Rights Reserved.
+      </p>
+
+    </div>
+
+  </div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
