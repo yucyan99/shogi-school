@@ -1,37 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://example.com/</loc>
+    <loc>https://yucyan99.github.io/shogi-school/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://example.com/blog/index.html</loc>
+    <loc>https://yucyan99.github.io/shogi-school/blog/index.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://example.com/blog/hajimekata.html</loc>
+    <loc>https://yucyan99.github.io/shogi-school/blog/hajimekata.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://example.com/blog/komaochi-toha.html</loc>
+    <loc>https://yucyan99.github.io/shogi-school/blog/komaochi-toha.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://example.com/blog/online-jotatsu.html</loc>
+    <loc>https://yucyan99.github.io/shogi-school/blog/online-jotatsu.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://example.com/privacy.html</loc>
+    <loc>https://yucyan99.github.io/shogi-school/blog/shodan-no-kabe.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yucyan99.github.io/shogi-school/privacy.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://example.com/tokushoho.html</loc>
+    <loc>https://yucyan99.github.io/shogi-school/tokushoho.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
