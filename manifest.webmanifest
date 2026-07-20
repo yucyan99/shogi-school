@@ -1,0 +1,19 @@
+{
+  "name": "ゆうちゃんのオンライン将棋教室",
+  "short_name": "将棋教室",
+  "description": "一手ずつ、あなたの将棋を強くする。初心者から有段者まで学べるオンライン将棋教室。",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#0f3d91",
+  "lang": "ja",
+  "icons": [
+    {
+      "src": "./images/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
