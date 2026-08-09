@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>オンラインレッスンでも将棋は上達できる？｜ゆうちゃんのオンライン将棋教室</title>
-  <meta name="description" content="オンラインの将棋レッスンで本当に上達できるのか、Teamsと81Dojoを使った実際のレッスンの流れを交えてご説明します。">
-  <link rel="canonical" href="https://yuchanshogi.com/blog/online-jotatsu.html">
+  <title>手筋はどう覚える?丸暗記にならない身につけ方｜ゆうちゃんのオンライン将棋教室</title>
+  <meta name="description" content="初段を目指す方向けに、手筋の身につけ方を解説します。次の一手形式の本の使い方、気づけなかった場面の振り返り方、実戦での意識の仕方まで紹介します。">
+  <link rel="canonical" href="https://yuchanshogi.com/blog/tesuji-oboekata.html">
   <link rel="icon" href="../favicon.ico" sizes="any">
   <link rel="icon" type="image/png" href="../images/logo.png">
   <link rel="manifest" href="../manifest.webmanifest">
@@ -13,16 +13,17 @@
   <meta name="robots" content="index, follow">
 
   <meta property="og:type" content="article">
-  <meta property="og:title" content="オンラインレッスンでも将棋は上達できる？">
-  <meta property="og:description" content="Teamsと81Dojoを使った実際のレッスンの流れを交えて、オンラインレッスンの進め方をご説明します。">
+  <meta property="og:title" content="手筋はどう覚える?丸暗記にならない身につけ方">
+  <meta property="og:description" content="初段を目指す方向けに、手筋の身につけ方を解説します。次の一手形式の本の使い方、気づけなかった場面の振り返り方、実戦での意識の仕方まで紹介します。">
   <meta property="og:image" content="https://yuchanshogi.com/images/ogp.jpg">
-  <meta property="og:url" content="https://yuchanshogi.com/blog/online-jotatsu.html">
+  <meta property="og:url" content="https://yuchanshogi.com/blog/tesuji-oboekata.html">
   <meta property="og:locale" content="ja_JP">
   <meta property="og:site_name" content="ゆうちゃんのオンライン将棋教室">
   <meta name="twitter:card" content="summary_large_image">
 
   <link rel="stylesheet" href="../style.css">
 
+  <!-- 構造化データ: パンくずリスト -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -30,17 +31,18 @@
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://yuchanshogi.com/" },
       { "@type": "ListItem", "position": 2, "name": "ブログ", "item": "https://yuchanshogi.com/blog/index.html" },
-      { "@type": "ListItem", "position": 3, "name": "オンラインレッスンでも将棋は上達できる？", "item": "https://yuchanshogi.com/blog/online-jotatsu.html" }
+      { "@type": "ListItem", "position": 3, "name": "手筋はどう覚える", "item": "https://yuchanshogi.com/blog/tesuji-oboekata.html" }
     ]
   }
   </script>
 
+  <!-- 構造化データ: BlogPosting -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "headline": "オンラインレッスンでも将棋は上達できる？",
-    "datePublished": "2026-07-21",
+    "headline": "手筋はどう覚える?丸暗記にならない身につけ方",
+    "datePublished": "2026-08-09",
     "author": { "@type": "Person", "name": "ゆうちゃん" },
     "publisher": { "@type": "Organization", "name": "ゆうちゃんのオンライン将棋教室" }
   }
@@ -49,6 +51,7 @@
 <body>
   <a class="skip-link" href="#main">本文へスキップ</a>
 
+  <!-- ===================== Header ===================== -->
   <header class="site-header is-scrolled">
     <div class="site-header__inner">
       <a href="../index.html" class="site-header__brand">
@@ -98,33 +101,37 @@
 
         <article class="reveal">
           <header class="blog-post__header">
-            <p class="blog-post__meta"><time datetime="2026-07-21">2026年7月21日</time></p>
-            <h1>オンラインレッスンでも将棋は上達できる？</h1>
+            <p class="blog-post__meta"><time datetime="2026-08-09">2026年8月9日</time></p>
+            <h1>手筋はどう覚える?丸暗記にならない身につけ方</h1>
           </header>
 
           <div class="blog-post__thumb">
-            <img src="../images/online-jotatsu-thumb.png" alt="オンラインレッスンでも上達できる? 画面越しでも、対局と同じ実感を" loading="lazy" width="1672" height="941">
+            <img src="../images/tesuji-oboekata-thumb.png" alt="手筋はどう覚える?丸暗記にならない身につけ方" loading="lazy" width="1672" height="941">
           </div>
 
           <div class="blog-post__body">
-            <p>「オンラインのレッスンで、本当に将棋が上達するのだろうか」という疑問を持つ方は少なくないと思います。この記事では、実際のレッスンがどのような流れで進むのかをご紹介しながら、この疑問にお答えします。</p>
+            <p>「初段の壁」の記事で、級位者と初段の差を分けるポイントの一つとして「手筋の引き出しの数」を挙げました。今回は、この手筋をどうやって増やしていけばいいのか、具体的な方法をお伝えします。</p>
 
-            <h2>使うツールは「Teams」と「81Dojo」の2つだけ</h2>
-            <p>レッスンでは、ビデオ通話に「Teams」、対局に将棋対局サイト「81Dojo」を使用します。どちらも事前に使い方をご案内しますので、パソコンの操作に不慣れな方でも心配はいりません。将棋盤や駒をご自身で用意していただく必要もありません。</p>
+            <h2>そもそも手筋とは何か</h2>
+            <p>手筋とは、特定の局面で使える「決まった形の良い手」のことです。一つひとつの手筋は、覚えてしまえば一瞬で判断できる武器になります。逆に言えば、手筋を知らないと、毎回一から自力で考えなければならず、時間もかかりますし、見落としも増えてしまいます。</p>
 
-            <h2>対局中は集中して、感想戦でしっかり振り返る</h2>
-            <p>レッスンの中心は、駒落ちによる指導対局と、そのあとの感想戦です。対局中は、実戦に近い雰囲気を大切にするため、集中してじっくり指す時間になります。そして対局が終わったあと、感想戦の時間を設けて、見直したい場面を中心に一緒に振り返りながら、次に活かせるポイントをお伝えします。</p>
-            <p>この「対局→感想戦」という流れ自体は、対面のレッスンと変わりません。画面越しであっても、盤面を見ながらリアルタイムで会話できるので、対面と近い形で学んでいただけます。</p>
+            <h2>手筋はどうやって身につけるのか</h2>
 
-            <h2>オンラインならではの良さもあります</h2>
-            <p>教室に通う時間や移動の負担がないため、ご自宅から無理なく続けやすいというのも、オンラインレッスンの利点です。特に、忙しい方やお子さんの送り迎えが難しいご家庭にとっては、続けやすさそのものが上達への近道になることもあります。</p>
+            <h3>手筋は「問題を解きながら」覚えるもの</h3>
+            <p>手筋は、<a href="https://www.amazon.co.jp/dp/4839921334" target="_blank" rel="noopener noreferrer">『ひと目の手筋』</a>のような次の一手形式の本を解いたり、実戦や棋譜を通して触れたりする中で、少しずつ定着していくものです。「この局面ではこう指すのが正解」という問題に取り組み、答え合わせをする、この繰り返しも身につける方法の一つです。</p>
 
-            <h2>まずは無料体験で、実際の雰囲気を確かめてください</h2>
-            <p>言葉で説明するよりも、実際に一度体験していただく方が、オンラインレッスンの雰囲気はずっと伝わりやすいと思います。ご質問だけでも構いませんので、気になる方はお気軽にお問い合わせください。</p>
+            <h3>気づけなかった手筋こそ、繰り返し振り返る</h3>
+            <p>問題を間違えたときも、実戦で気づけなかったときも、その時点ではまだその手筋が身についていない証拠です。問題であれば少し期間を空けてもう一度解き直し、実戦であれば感想戦で振り返るなどして、同じ場面に何度も触れ直しましょう。パッと手が浮かぶようになれば、実戦でも使える状態になっています。</p>
+
+            <h3>実戦で意識的に探してみる</h3>
+            <p>対局中、本や棋譜で見た形に似た局面が来たら、一度立ち止まって「あの手筋が使えないか」と意識的に探してみましょう。最初はうまく見つけられなくても、この「探す」という行為自体が、次第に自然な感覚に変わっていきます。</p>
+
+            <h2>まとめ</h2>
+            <p>手筋は、覚えるだけでは意味がありません。問題や実戦を通して触れ、気づけなかった場面を繰り返し振り返り、少しずつ着実に増やしていく。この積み重ねが、初段への近道になります。</p>
           </div>
 
           <div class="blog-post__cta">
-            <p>実際のレッスンの雰囲気を、まずは無料体験で確かめてみませんか。</p>
+            <p>初段を目指す方向けの指導も行っています。気になる方は、まずは無料体験からお試しください。</p>
             <a href="../index.html#contact" class="btn btn--primary">無料体験を申し込む</a>
           </div>
         </article>
@@ -134,6 +141,7 @@
     </section>
   </main>
 
+  <!-- ===================== Footer ===================== -->
   <footer class="site-footer">
     <div class="container site-footer__inner">
       <div>
