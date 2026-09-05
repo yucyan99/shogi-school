@@ -678,6 +678,17 @@
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5"/><path d="M5 12l7-7 7 7"/></svg>
   </button>
 
+  <!-- スマホ用 固定CTAバー -->
+  <div class="sticky-cta" id="stickyCta">
+    <a
+      href="https://docs.google.com/forms/d/e/1FAIpQLSeoJSnN0e38d3bgUQnlUlQD2eR1Ke6zgjVOjUeUDdLPP8EvkA/viewform?usp=dialog"
+      class="btn btn--primary btn--block sticky-cta__btn"
+      target="_blank"
+      rel="noopener noreferrer"
+      onclick="if(typeof gtag==='function'){gtag('event','cta_click',{event_category:'engagement',event_label:'free_trial_apply_sticky'});} if(typeof ytag==='function'){ytag({type:'yss_conversion', config:{yahoo_conversion_id:'1001410677', yahoo_conversion_label:'dc4ECJjL9e4cEL_J8sxE', yahoo_conversion_value:'0'}});}"
+      >無料体験に申し込む</a>
+  </div>
+
   <script src="./script.js" defer></script>
 </body>
 </html>
