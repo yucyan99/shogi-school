@@ -166,6 +166,7 @@
           <li><a href="#top" class="site-nav__link" data-nav-link>ホーム</a></li>
           <li><a href="#lesson" class="site-nav__link" data-nav-link>レッスン</a></li>
           <li><a href="#profile" class="site-nav__link" data-nav-link>講師紹介</a></li>
+          <li><a href="#voices" class="site-nav__link" data-nav-link>生徒の声</a></li>
           <li><a href="#pricing" class="site-nav__link" data-nav-link>料金</a></li>
           <li><a href="#faq" class="site-nav__link" data-nav-link>FAQ</a></li>
           <li><a href="./blog/index.html" class="site-nav__link">ブログ</a></li>
@@ -194,6 +195,7 @@
       <li><a href="#top" class="mobile-nav__link" data-nav-link>ホーム</a></li>
       <li><a href="#lesson" class="mobile-nav__link" data-nav-link>レッスン</a></li>
       <li><a href="#profile" class="mobile-nav__link" data-nav-link>講師紹介</a></li>
+      <li><a href="#voices" class="mobile-nav__link" data-nav-link>生徒の声</a></li>
       <li><a href="#pricing" class="mobile-nav__link" data-nav-link>料金</a></li>
       <li><a href="#faq" class="mobile-nav__link" data-nav-link>FAQ</a></li>
       <li><a href="./blog/index.html" class="mobile-nav__link">ブログ</a></li>
@@ -218,7 +220,8 @@
           <p class="hero__subtitle">
             初心者から有段者まで。<br>
             マンツーマンで指導する、オンラインレッスン。<br>
-            日本全国どこからでも、ご自宅のパソコンから受講できます。
+            日本全国どこからでも、ご自宅のパソコンから受講できます。<br>
+            1回2,500円〜、まずは無料体験からどうぞ。
           </p>
           <div class="hero__actions">
             <a href="#contact" class="btn btn--primary btn--large">無料体験を申し込む</a>
@@ -445,6 +448,32 @@
       </div>
     </section>
 
+    <!-- ===================== 生徒の声 ===================== -->
+    <section class="section" id="voices">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__eyebrow">VOICES</span>
+          <h2>生徒の声</h2>
+        </div>
+
+        <div class="card-grid reveal-stagger">
+          <article class="card reveal" style="--stagger-index:0">
+            <p class="card__text">
+              「終盤の解説がとても分かりやすく、お支払いからレッスンまでの流れもスムーズでした。またお願いしたいと思います」
+            </p>
+            <p class="card__title" style="margin-top:1rem; font-size:0.95rem;">社会人の方</p>
+          </article>
+
+          <article class="card reveal" style="--stagger-index:1">
+            <p class="card__text">
+              「考えるのはすごく疲れたけど、『あ、そういう手もあるんだ』って気づけました。説明もすごく分かりやすかったです」
+            </p>
+            <p class="card__title" style="margin-top:1rem; font-size:0.95rem;">中学1年生の生徒さん</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <!-- ===================== 料金 ===================== -->
     <section class="section" id="pricing">
       <div class="container">
@@ -547,9 +576,16 @@
         <p class="cta__text">
           対局を通じて、あなたの将棋にどんな課題があるのかを一緒に見つけていきます。
         </p>
-        <!-- GA4でクリック(=申し込み意欲)をキーイベントとして計測するため、
-             Googleフォームへの直リンクではなく中継ページ(apply.html)を経由させています -->
-        <a href="./apply.html" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer">
+        <!-- GA4イベントをボタン自体に直接紐づけ、中継ページ(apply.html)なしで
+             Googleフォームへ直接遷移させています。gtagはsendBeaconを使うため、
+             クリック直後に画面遷移してもイベント送信は問題なく完了します。 -->
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSeoJSnN0e38d3bgUQnlUlQD2eR1Ke6zgjVOjUeUDdLPP8EvkA/viewform?usp=dialog"
+          class="btn btn--primary btn--large"
+          target="_blank"
+          rel="noopener noreferrer"
+          onclick="if(typeof gtag==='function'){gtag('event','cta_click',{event_category:'engagement',event_label:'free_trial_apply'});}"
+        >
           無料体験を申し込む
         </a>
         <p class="cta__note">ご質問だけでも構いません。まずはお気軽にどうぞ。</p>
