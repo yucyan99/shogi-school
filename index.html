@@ -11,6 +11,14 @@
     gtag('config', 'G-YJCT517J84');
   </script>
 
+  <!-- Yahoo!広告 コンバージョン測定 サイトジェネラルタグ -->
+  <script async src="https://s.yimg.jp/images/listing/tool/cv/ytag.js"></script>
+  <script>
+    window.yjDataLayer = window.yjDataLayer || [];
+    function ytag() { yjDataLayer.push(arguments); }
+    ytag({type:'ycl_cookie', config:{ycl_use_non_cookie_storage:true}});
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>オンライン将棋教室｜個別指導・初心者〜有段者対応｜ゆうちゃん将棋教室</title>
@@ -185,7 +193,7 @@
           class="btn btn--primary site-header__cta"
           target="_blank"
           rel="noopener noreferrer"
-          onclick="if(typeof gtag==='function'){gtag('event','cta_click',{event_category:'engagement',event_label:'free_trial_apply_header'});}"
+          onclick="if(typeof gtag==='function'){gtag('event','cta_click',{event_category:'engagement',event_label:'free_trial_apply_header'});} if(typeof ytag==='function'){ytag({type:'yss_conversion', config:{yahoo_conversion_id:'1001410677', yahoo_conversion_label:'dc4ECJjL9e4cEL_J8sxE', yahoo_conversion_value:'0'}});}"
         >無料体験を申し込む</a>
       </nav>
 
@@ -244,7 +252,7 @@
               class="btn btn--primary btn--large"
               target="_blank"
               rel="noopener noreferrer"
-              onclick="if(typeof gtag==='function'){gtag('event','cta_click',{event_category:'engagement',event_label:'free_trial_apply_hero'});}"
+              onclick="if(typeof gtag==='function'){gtag('event','cta_click',{event_category:'engagement',event_label:'free_trial_apply_hero'});} if(typeof ytag==='function'){ytag({type:'yss_conversion', config:{yahoo_conversion_id:'1001410677', yahoo_conversion_label:'dc4ECJjL9e4cEL_J8sxE', yahoo_conversion_value:'0'}});}"
             >無料体験を申し込む</a>
             <a href="#lesson" class="btn btn--outline btn--large">レッスンを見る</a>
           </div>
@@ -610,7 +618,7 @@
           class="btn btn--primary btn--large"
           target="_blank"
           rel="noopener noreferrer"
-          onclick="if(typeof gtag==='function'){gtag('event','cta_click',{event_category:'engagement',event_label:'free_trial_apply'});}"
+          onclick="if(typeof gtag==='function'){gtag('event','cta_click',{event_category:'engagement',event_label:'free_trial_apply'});} if(typeof ytag==='function'){ytag({type:'yss_conversion', config:{yahoo_conversion_id:'1001410677', yahoo_conversion_label:'dc4ECJjL9e4cEL_J8sxE', yahoo_conversion_value:'0'}});}"
         >
           無料体験を申し込む
         </a>
