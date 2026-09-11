@@ -956,6 +956,22 @@ summary:focus-visible {
   display: block;
 }
 
+.profile__x-link {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: var(--color-secondary);
+}
+
+.profile__x-link a {
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.profile__x-link a:hover {
+  text-decoration: underline;
+}
+
 .profile__achievements {
   margin-top: 64px;
   padding-top: 48px;
@@ -1560,6 +1576,23 @@ summary:focus-visible {
   margin-bottom: 16px;
   color: var(--color-secondary);
   font-weight: 600;
+}
+
+.blog-post__x-cta {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: var(--color-secondary);
+}
+
+.blog-post__x-cta a {
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.blog-post__x-cta a:hover {
+  text-decoration: underline;
 }
 
 .blog-post__back {
