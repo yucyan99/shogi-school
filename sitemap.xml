@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://yuchanshogi.com/</loc>
-    <lastmod>2026-08-16</lastmod>
+    <loc>https://yuchanshogi.com/index.html</loc>    <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -54,6 +53,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+    <url>
+          <loc>https://yuchanshogi.com/blog/semekata.html</loc>
+          <lastmod>2026-08-22</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>0.6</priority>
+    </url>
   <url>
     <loc>https://yuchanshogi.com/privacy.html</loc>
     <lastmod>2026-08-16</lastmod>
