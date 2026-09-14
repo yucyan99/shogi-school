@@ -1428,8 +1428,26 @@ summary:focus-visible {
    --------------------------------------------------------------------- */
 .blog-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 28px;
+}
+
+/* ブログ一覧のカテゴリ分け */
+.blog-category {
+  scroll-margin-top: calc(var(--header-height) + 24px);
+  margin-bottom: 64px;
+}
+
+.blog-category:last-child {
+  margin-bottom: 0;
+}
+
+.blog-category__header {
+  margin-bottom: 28px;
+}
+
+.blog-category__title {
+  margin-bottom: 0.3em;
 }
 
 .blog-card {
