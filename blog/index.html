@@ -103,108 +103,137 @@
           記事を追加する手順:
           1. blog/sample-post.html をコピーして新しいファイル名（例: blog/2026-08-benkyohou.html）を作成
           2. コピーしたファイル内のタイトル・日付・本文を書き換える
-          3. 下記の <div class="blog-grid"> 内に、新しい記事へのカードを1つ追加する（既存のカードを複製して書き換えるのが簡単です）
+          3. 対象カテゴリの <div class="blog-grid"> 内に、新しい記事へのカードを1つ追加する（既存のカードを複製して書き換えるのが簡単です）
+             複数のレベルの読者に関係する記事は、同じカードを複数のカテゴリに追加してもOK
           4. ルートの sitemap.xml にも新しい記事のURLを追加する
         -->
-        <div class="blog-grid reveal-stagger">
-          <article class="blog-card reveal" style="--stagger-index:0">
-            <a href="./hajimekata.html" class="blog-card__link">
-              <div class="blog-card__thumb">
-                <img src="../images/hajimekata-thumb.png" alt="" loading="lazy" width="1672" height="941">
-              </div>
-              <div class="blog-card__body">
-                <p class="blog-card__meta"><time datetime="2026-07-21">2026年7月21日</time></p>
-                <h2 class="blog-card__title">将棋のルールを全部覚えてから始めなくても大丈夫な理由</h2>
-                <p class="blog-card__excerpt">ルールを覚えるのが大変そうで一歩を踏み出せない方へ。最初からすべて覚えなくても大丈夫な理由をお伝えします。</p>
-              </div>
-            </a>
-          </article>
 
-          <article class="blog-card reveal" style="--stagger-index:1">
-            <a href="./komaochi-toha.html" class="blog-card__link">
-              <div class="blog-card__thumb">
-                <img src="../images/komaochi-toha-thumb.png" alt="" loading="lazy" width="1672" height="941">
-              </div>
-              <div class="blog-card__body">
-                <p class="blog-card__meta"><time datetime="2026-07-21">2026年7月21日</time></p>
-                <h2 class="blog-card__title">「駒落ち」とは？上達に役立つ理由</h2>
-                <p class="blog-card__excerpt">駒落ちとはどのような仕組みで、なぜ上達に役立つのかを解説します。</p>
-              </div>
-            </a>
-          </article>
+        <div class="blog-category" id="beginner">
+          <div class="blog-category__header">
+            <h2 class="blog-category__title">これから始める方へ</h2>
+            <p class="section__lead">将棋を始めたばかりの方・これから始めたい方向けの記事です。</p>
+          </div>
+          <div class="blog-grid reveal-stagger">
+            <article class="blog-card reveal" style="--stagger-index:0">
+              <a href="./hajimekata.html" class="blog-card__link">
+                <div class="blog-card__thumb">
+                  <img src="../images/hajimekata-thumb.png" alt="" loading="lazy" width="1672" height="941">
+                </div>
+                <div class="blog-card__body">
+                  <p class="blog-card__meta"><time datetime="2026-07-21">2026年7月21日</time></p>
+                  <h3 class="blog-card__title">将棋のルールを全部覚えてから始めなくても大丈夫な理由</h3>
+                  <p class="blog-card__excerpt">ルールを覚えるのが大変そうで一歩を踏み出せない方へ。最初からすべて覚えなくても大丈夫な理由をお伝えします。</p>
+                </div>
+              </a>
+            </article>
 
-          <article class="blog-card reveal" style="--stagger-index:2">
-            <a href="./online-jotatsu.html" class="blog-card__link">
-              <div class="blog-card__thumb">
-                <img src="../images/online-jotatsu-thumb.png" alt="" loading="lazy" width="1672" height="941">
-              </div>
-              <div class="blog-card__body">
-                <p class="blog-card__meta"><time datetime="2026-07-21">2026年7月21日</time></p>
-                <h2 class="blog-card__title">オンラインレッスンでも将棋は上達できる？</h2>
-                <p class="blog-card__excerpt">Teamsと81Dojoを使った実際のレッスンの流れを交えてご説明します。</p>
-              </div>
-            </a>
-          </article>
-          <article class="blog-card reveal" style="--stagger-index:3">
-            <a href="./shodan-no-kabe.html" class="blog-card__link">
-              <div class="blog-card__thumb">
-                <img src="../images/shodan-no-kabe-thumb.png" alt="級位者と初段の違いは何か?「初段の壁」を越えるために" loading="lazy" width="1672" height="941">
-              </div>
-              <div class="blog-card__body">
-                <p class="blog-card__meta"><time datetime="2026-07-21">2026年7月21日</time></p>
-                <h2 class="blog-card__title">級位者と初段の違いは何か?「初段の壁」を越えるために</h2>
-                <p class="blog-card__excerpt">初段を目指す方向けに、級位者と初段の棋力差と、壁を越えるためにやるべきことを解説します。</p>
-              </div>
-            </a>
-          </article>
-          <article class="blog-card reveal" style="--stagger-index:4">
-            <a href="./tsumeshogi-torikumikata.html" class="blog-card__link">
-              <div class="blog-card__thumb">
-                <img src="../images/tsumeshogi-torikumikata-thumb.png" alt="詰将棋の取り組み方 - 何手詰めから始めて、どう解けばいいのか" loading="lazy" width="1672" height="941">
-              </div>
-              <div class="blog-card__body">
-                <p class="blog-card__meta"><time datetime="2026-08-02">2026年8月2日</time></p>
-                <h2 class="blog-card__title">詰将棋の取り組み方 - 何手詰めから始めて、どう解けばいいのか</h2>
-                <p class="blog-card__excerpt">初段を目指す方向けに、詰将棋の正しい取り組み方(何手詰めから始めるか・解き方・継続のコツ)を解説します。</p>
-              </div>
-            </a>
-          </article>
-          <article class="blog-card reveal" style="--stagger-index:5">
-            <a href="./tesuji-oboekata.html" class="blog-card__link">
-              <div class="blog-card__thumb">
-                <img src="../images/tesuji-oboekata-thumb.png" alt="手筋はどう覚える?丸暗記にならない身につけ方" loading="lazy" width="1672" height="941">
-              </div>
-              <div class="blog-card__body">
-                <p class="blog-card__meta"><time datetime="2026-08-09">2026年8月9日</time></p>
-                <h2 class="blog-card__title">手筋はどう覚える?丸暗記にならない身につけ方</h2>
-                <p class="blog-card__excerpt">初段を目指す方向けに、手筋の身につけ方(次の一手形式の本の使い方・振り返り方・実戦での意識の仕方)を解説します。</p>
-              </div>
-            </a>
-          </article>
-          <article class="blog-card reveal" style="--stagger-index:6">
-            <a href="./keisei-handan.html" class="blog-card__link">
-              <div class="blog-card__thumb">
-                <img src="../images/keisei-handan-thumb.png" alt="形勢判断ってどうやるの?初段が意識している4つの視点" loading="lazy" width="1672" height="941">
-              </div>
-              <div class="blog-card__body">
-                <p class="blog-card__meta"><time datetime="2026-08-16">2026年8月16日</time></p>
-                <h2 class="blog-card__title">形勢判断ってどうやるの?初段が意識している4つの視点</h2>
-                <p class="blog-card__excerpt">初段を目指す方向けに、大局観(駒の損得・玉の堅さ・駒の効率・手番)の身につけ方を解説します。</p>
-              </div>
-            </a>
-          </article>
-          <article class="blog-card reveal" style="--stagger-index:7">
-            <a href="./semekata.html" class="blog-card__link">
-              <div class="blog-card__thumb">
-                <img src="../images/semekata-thumb.png" alt="将棋の初心者が攻め方で迷ったら" loading="lazy" width="1672" height="941">
-              </div>
-              <div class="blog-card__body">
-                <p class="blog-card__meta"><time datetime="2026-09-12">2026年9月12日</time></p>
-                <h2 class="blog-card__title">将棋の初心者が攻め方で迷ったら</h2>
-                <p class="blog-card__excerpt">攻め方の身につけ方と、初心者に一番おすすめの戦法である棒銀の駒組みの流れを解説します。</p>
-              </div>
-            </a>
-          </article>
+            <article class="blog-card reveal" style="--stagger-index:1">
+              <a href="./semekata.html" class="blog-card__link">
+                <div class="blog-card__thumb">
+                  <img src="../images/semekata-thumb.png" alt="将棋の初心者が攻め方で迷ったら" loading="lazy" width="1672" height="941">
+                </div>
+                <div class="blog-card__body">
+                  <p class="blog-card__meta"><time datetime="2026-09-12">2026年9月12日</time></p>
+                  <h3 class="blog-card__title">将棋の初心者が攻め方で迷ったら</h3>
+                  <p class="blog-card__excerpt">攻め方の身につけ方と、初心者に一番おすすめの戦法である棒銀の駒組みの流れを解説します。</p>
+                </div>
+              </a>
+            </article>
+          </div>
+        </div>
+
+        <div class="blog-category" id="shodan">
+          <div class="blog-category__header">
+            <h2 class="blog-category__title">初段を目指す方へ</h2>
+            <p class="section__lead">級位者から初段を目指す方向けの、上達のための記事です。</p>
+          </div>
+          <div class="blog-grid reveal-stagger">
+            <article class="blog-card reveal" style="--stagger-index:0">
+              <a href="./shodan-no-kabe.html" class="blog-card__link">
+                <div class="blog-card__thumb">
+                  <img src="../images/shodan-no-kabe-thumb.png" alt="級位者と初段の違いは何か?「初段の壁」を越えるために" loading="lazy" width="1672" height="941">
+                </div>
+                <div class="blog-card__body">
+                  <p class="blog-card__meta"><time datetime="2026-07-21">2026年7月21日</time></p>
+                  <h3 class="blog-card__title">級位者と初段の違いは何か?「初段の壁」を越えるために</h3>
+                  <p class="blog-card__excerpt">初段を目指す方向けに、級位者と初段の棋力差と、壁を越えるためにやるべきことを解説します。</p>
+                </div>
+              </a>
+            </article>
+
+            <article class="blog-card reveal" style="--stagger-index:1">
+              <a href="./tsumeshogi-torikumikata.html" class="blog-card__link">
+                <div class="blog-card__thumb">
+                  <img src="../images/tsumeshogi-torikumikata-thumb.png" alt="詰将棋の取り組み方 - 何手詰めから始めて、どう解けばいいのか" loading="lazy" width="1672" height="941">
+                </div>
+                <div class="blog-card__body">
+                  <p class="blog-card__meta"><time datetime="2026-08-02">2026年8月2日</time></p>
+                  <h3 class="blog-card__title">詰将棋の取り組み方 - 何手詰めから始めて、どう解けばいいのか</h3>
+                  <p class="blog-card__excerpt">初段を目指す方向けに、詰将棋の正しい取り組み方(何手詰めから始めるか・解き方・継続のコツ)を解説します。</p>
+                </div>
+              </a>
+            </article>
+
+            <article class="blog-card reveal" style="--stagger-index:2">
+              <a href="./tesuji-oboekata.html" class="blog-card__link">
+                <div class="blog-card__thumb">
+                  <img src="../images/tesuji-oboekata-thumb.png" alt="手筋はどう覚える?丸暗記にならない身につけ方" loading="lazy" width="1672" height="941">
+                </div>
+                <div class="blog-card__body">
+                  <p class="blog-card__meta"><time datetime="2026-08-09">2026年8月9日</time></p>
+                  <h3 class="blog-card__title">手筋はどう覚える?丸暗記にならない身につけ方</h3>
+                  <p class="blog-card__excerpt">初段を目指す方向けに、手筋の身につけ方(次の一手形式の本の使い方・振り返り方・実戦での意識の仕方)を解説します。</p>
+                </div>
+              </a>
+            </article>
+
+            <article class="blog-card reveal" style="--stagger-index:3">
+              <a href="./keisei-handan.html" class="blog-card__link">
+                <div class="blog-card__thumb">
+                  <img src="../images/keisei-handan-thumb.png" alt="形勢判断ってどうやるの?初段が意識している4つの視点" loading="lazy" width="1672" height="941">
+                </div>
+                <div class="blog-card__body">
+                  <p class="blog-card__meta"><time datetime="2026-08-16">2026年8月16日</time></p>
+                  <h3 class="blog-card__title">形勢判断ってどうやるの?初段が意識している4つの視点</h3>
+                  <p class="blog-card__excerpt">初段を目指す方向けに、大局観(駒の損得・玉の堅さ・駒の効率・手番)の身につけ方を解説します。</p>
+                </div>
+              </a>
+            </article>
+          </div>
+        </div>
+
+        <div class="blog-category" id="school">
+          <div class="blog-category__header">
+            <h2 class="blog-category__title">教室・レッスンについて</h2>
+            <p class="section__lead">オンライン将棋教室のレッスン内容や受け方についての記事です。</p>
+          </div>
+          <div class="blog-grid reveal-stagger">
+            <article class="blog-card reveal" style="--stagger-index:0">
+              <a href="./online-jotatsu.html" class="blog-card__link">
+                <div class="blog-card__thumb">
+                  <img src="../images/online-jotatsu-thumb.png" alt="" loading="lazy" width="1672" height="941">
+                </div>
+                <div class="blog-card__body">
+                  <p class="blog-card__meta"><time datetime="2026-07-21">2026年7月21日</time></p>
+                  <h3 class="blog-card__title">オンラインレッスンでも将棋は上達できる？</h3>
+                  <p class="blog-card__excerpt">Teamsと81Dojoを使った実際のレッスンの流れを交えてご説明します。</p>
+                </div>
+              </a>
+            </article>
+
+            <article class="blog-card reveal" style="--stagger-index:1">
+              <a href="./komaochi-toha.html" class="blog-card__link">
+                <div class="blog-card__thumb">
+                  <img src="../images/komaochi-toha-thumb.png" alt="" loading="lazy" width="1672" height="941">
+                </div>
+                <div class="blog-card__body">
+                  <p class="blog-card__meta"><time datetime="2026-07-21">2026年7月21日</time></p>
+                  <h3 class="blog-card__title">「駒落ち」とは？上達に役立つ理由</h3>
+                  <p class="blog-card__excerpt">駒落ちとはどのような仕組みで、なぜ上達に役立つのかを解説します。</p>
+                </div>
+              </a>
+            </article>
+          </div>
         </div>
       </div>
     </section>
