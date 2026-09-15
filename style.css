@@ -1069,6 +1069,11 @@ summary:focus-visible {
   line-height: 1.5;
 }
 
+.pricing__card--trial .pricing__price {
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  color: var(--color-secondary);
+}
+
 /* ---------------------------------------------------------------------
    13. FAQ アコーディオン
    --------------------------------------------------------------------- */
