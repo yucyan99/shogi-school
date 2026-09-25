@@ -1420,6 +1420,13 @@ summary:focus-visible {
    
    .scroll-top {
       bottom: 84px;
+      right: 12px;
+      width: 40px;
+      height: 40px;
+   }
+   
+   .scroll-top.is-visible {
+      opacity: 0.85;
    }
    
    body {
