@@ -1429,6 +1429,10 @@ summary:focus-visible {
       opacity: 0.85;
    }
    
+   .hero__scroll {
+      display: none;
+   }
+   
    body {
       padding-bottom: 88px;
    }
