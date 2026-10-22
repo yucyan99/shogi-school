@@ -122,7 +122,9 @@
     </div>
   </div>
 
-  <!-- 申込経路の記録: 広告のクリックIDなどから流入元を判定し、Googleフォームの「経路（運営用・入力不要）」欄(entry.1359821143)に自動入力する -->
+  <!-- 申込経路の記録: 広告のクリックIDなどから流入元を判定し、Googleフォームの「受付コード」欄(entry.1359821143)に自動入力する
+       コード: Y1=Yahoo検索広告 Y2=Yahooディスプレイ広告 Y0=Yahoo広告(種類不明) M1=Microsoft検索広告 M2=Microsoftディスプレイ広告
+               G1=Google広告 S1=自然検索(Google/Yahoo/Bing) R1=他サイト・SNS・utm付きリンク D1=直接(ブックマーク等) -->
   <script>
     (function () {
       var ENTRY = 'entry.1359821143';
@@ -134,36 +136,33 @@
         var medium = (p.get('utm_medium') || '').toLowerCase();
         var yclid = p.get('yclid') || '';
         if (yclid) {
-          if (yclid.indexOf('YSS') === 0) return 'yahoo_search';
-          if (yclid.indexOf('YJAD') === 0) return 'yahoo_display';
-          return 'yahoo';
+          if (yclid.indexOf('YSS') === 0) return 'Y1';
+          if (yclid.indexOf('YJAD') === 0) return 'Y2';
+          return 'Y0';
         }
-        if (p.get('msclkid')) return medium === 'display' ? 'microsoft_display' : 'microsoft_search';
-        if (p.get('gclid') || p.get('gbraid') || p.get('wbraid')) return 'google_ads';
-        if (p.get('utm_source')) return (p.get('utm_source') + (medium ? '_' + medium : '')).toLowerCase();
+        if (p.get('msclkid')) return medium === 'display' ? 'M2' : 'M1';
+        if (p.get('gclid') || p.get('gbraid') || p.get('wbraid')) return 'G1';
+        if (p.get('utm_source')) return 'R1';
         var ref = document.referrer || '';
         if (ref) {
           var host = '';
           try { host = new URL(ref).hostname; } catch (e) {}
           if (host === location.hostname) return '';
-          if (/google\./.test(host)) return 'google_organic';
-          if (/yahoo\./.test(host)) return 'yahoo_organic';
-          if (/bing\./.test(host)) return 'bing_organic';
-          if (/(^|\.)(x|twitter)\.com$|t\.co$/.test(host)) return 'x';
-          return 'ref_' + host;
+          if (/(google|yahoo|bing)\./.test(host)) return 'S1';
+          return 'R1';
         }
-        return 'direct';
+        return 'D1';
       }
 
       var src = detect();
       var stored = null;
       try { stored = JSON.parse(localStorage.getItem(KEY) || 'null'); } catch (e) {}
-      if (src && src !== 'direct') {
+      if (src && src !== 'D1') {
         try { localStorage.setItem(KEY, JSON.stringify({ s: src, t: Date.now() })); } catch (e) {}
-      } else if (stored && stored.s && Date.now() - stored.t < MAX_AGE) {
+      } else if (stored && /^[A-Z][0-9]$/.test(stored.s) && Date.now() - stored.t < MAX_AGE) {
         src = stored.s;
       } else if (!src) {
-        src = 'direct';
+        src = 'D1';
       }
 
       function withSource(url) {
