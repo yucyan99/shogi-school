@@ -33,6 +33,31 @@
     gtag('config', 'G-YJCT517J84');
   </script>
 
+  <!-- Microsoft広告 UETタグ -->
+  <script>
+    (function(w, d, t, u, o) {
+      w[u] = w[u] || [], o.ts = (new Date).getTime();
+      var n = d.createElement(t);
+      n.src = "https://bat.bing.net/bat.js?ti=" + o.ti + ("uetq" != u ? "&q=" + u : ""),
+      n.async = 1, n.onload = n.onreadystatechange = function() {
+        var s = this.readyState;
+        s && "loaded" !== s && "complete" !== s ||
+        (o.q = w[u], w[u] = new UET(o), w[u].push("pageLoad"),
+        n.onload = n.onreadystatechange = null)
+      };
+      var i = d.getElementsByTagName(t)[0];
+      i.parentNode.insertBefore(n, i);
+    })(window, document, "script", "uetq", {
+      ti: "97277087",
+      enableAutoSpaTracking: true
+    });
+  </script>
+  <!-- Microsoft広告: このページ(申し込みフォームへの中継ページ)が開かれたら、無料体験ボタンクリックと同じコンバージョンとして計測 -->
+  <script>
+    window.uetq = window.uetq || [];
+    window.uetq.push('event', 'trial_form_click', { 'event_category': 'trial', 'event_label': 'apply_page' });
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>お申し込みフォームへ移動します｜ゆうちゃん将棋教室</title>
