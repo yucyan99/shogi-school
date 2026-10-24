@@ -772,7 +772,7 @@
     (function () {
       var ENTRY = 'entry.1359821143';
       var KEY = 'yc_src';
-      var MAX_AGE = 30 * 24 * 60 * 60 * 1000; // 広告経由の記録は30日間保持
+      var MAX_AGE = 30 * 24 * 60 * 60 * 1000; // 経由の記録は30日間保持
 
       function detect() {
         var p = new URLSearchParams(location.search);
@@ -800,16 +800,23 @@
         return 'D1';
       }
 
-      var src = detect();
-      var stored = null;
-      try { stored = JSON.parse(localStorage.getItem(KEY) || 'null'); } catch (e) {}
-      if (src && src !== 'D1') {
-        try { localStorage.setItem(KEY, JSON.stringify({ s: src, t: Date.now() })); } catch (e) {}
-      } else if (stored && /^[A-Z][0-9]$/.test(stored.s) && Date.now() - stored.t < MAX_AGE) {
-        src = stored.s;
-      } else if (!src) {
-        src = 'D1';
+      // 経由した流入元を古い順に記録し、「Y2>S1>Y1」のように > でつないでフォームに入れる
+      // (左端=最初のきっかけ、右端=申込み直前の流入元。直接訪問(D1)は記録しない。最大5件、30日で消える)
+      var MAX_LEN = 5;
+      var now = Date.now();
+      var hist = [];
+      try { hist = JSON.parse(localStorage.getItem(KEY) || '[]'); } catch (e) {}
+      if (hist && !(hist instanceof Array) && hist.s) hist = [hist]; // 旧形式(1件のみ)からの移行
+      if (!(hist instanceof Array)) hist = [];
+      hist = hist.filter(function (h) { return h && /^[A-Z][0-9]$/.test(h.s) && now - h.t < MAX_AGE; });
+      var cur = detect();
+      if (cur && cur !== 'D1') {
+        if (!hist.length || hist[hist.length - 1].s !== cur) hist.push({ s: cur, t: now });
+        else hist[hist.length - 1].t = now;
+        if (hist.length > MAX_LEN) hist = [hist[0]].concat(hist.slice(hist.length - (MAX_LEN - 1)));
+        try { localStorage.setItem(KEY, JSON.stringify(hist)); } catch (e) {}
       }
+      var src = hist.length ? hist.map(function (h) { return h.s; }).join('>') : 'D1';
 
       function withSource(url) {
         if (!url || url.indexOf('docs.google.com/forms') === -1 || url.indexOf(ENTRY + '=') !== -1) return url;
