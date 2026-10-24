@@ -123,7 +123,8 @@
   </div>
 
   <!-- 申込経路の記録: 広告のクリックIDなどから流入元を判定し、Googleフォームの「受付コード」欄(entry.1359821143)に自動入力する
-       コード: Y1=Yahoo検索広告 Y2=Yahooディスプレイ広告 Y0=Yahoo広告(種類不明) M1=Microsoft検索広告 M2=Microsoftディスプレイ広告
+       コード: Y1=Yahoo検索広告 Y2=Yahooディスプレイ広告 Y3=Yahooリターゲティング広告 Y0=Yahoo広告(種類不明)
+               M1=Microsoft検索広告 M2=Microsoftディスプレイ広告 M3=Microsoftリターゲティング広告
                G1=Google広告 S1=自然検索(Google/Yahoo/Bing) R1=他サイト・SNS・utm付きリンク D1=直接(ブックマーク等) -->
   <script>
     (function () {
@@ -135,12 +136,14 @@
         var p = new URLSearchParams(location.search);
         var medium = (p.get('utm_medium') || '').toLowerCase();
         var yclid = p.get('yclid') || '';
+        var rt = p.get('yc') === 'rt'; // リターゲティング広告のURLに付けた目印
         if (yclid) {
           if (yclid.indexOf('YSS') === 0) return 'Y1';
+          if (rt) return 'Y3';
           if (yclid.indexOf('YJAD') === 0) return 'Y2';
           return 'Y0';
         }
-        if (p.get('msclkid')) return medium === 'display' ? 'M2' : 'M1';
+        if (p.get('msclkid')) return rt ? 'M3' : (medium === 'display' ? 'M2' : 'M1');
         if (p.get('gclid') || p.get('gbraid') || p.get('wbraid')) return 'G1';
         if (p.get('utm_source')) return 'R1';
         var ref = document.referrer || '';
