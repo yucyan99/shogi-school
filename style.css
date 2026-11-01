@@ -523,6 +523,7 @@ summary:focus-visible {
   z-index: 0;
 }
 
+/* 2026-11-01: 下部を濃くして手前の駒を目立たなくする */
 .hero__overlay {
   position: absolute;
   inset: 0;
