@@ -526,7 +526,7 @@ summary:focus-visible {
 .hero__overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(10, 25, 60, 0.72) 0%, rgba(10, 25, 60, 0.55) 45%, rgba(10, 25, 60, 0.82) 100%);
+  background: linear-gradient(180deg, rgba(10, 25, 60, 0.72) 0%, rgba(10, 25, 60, 0.55) 40%, rgba(10, 25, 60, 0.82) 70%, rgba(10, 25, 60, 0.95) 100%);
   z-index: 1;
 }
 
